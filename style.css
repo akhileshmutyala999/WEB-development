@@ -1,0 +1,85 @@
+header {
+    background-image: url(/images/black.jpeg);
+    background-size: cover;
+    height: 30vh;
+    background-attachment: fixed;
+  }
+  
+  header h1 {
+    text-align: center;
+    width: max-content;
+    margin: 7vh auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(246, 246, 246, 0);
+    color: rgb(255, 255, 255);
+    border-radius: 50px;
+    text-decoration:underline;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  header nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.345);
+    padding: 10px;
+  }
+  
+  header nav ul li a {
+    text-decoration: underline;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif    ;
+  }
+  
+  header nav ul li a:hover {
+    color: rgb(255, 182, 10);
+    font-weight: bold;
+  }
+
+/*.......................................................................*/
+main {
+    height: 50vh;
+     }
+
+#allforms {
+    width: fit-content;
+    margin: 10vh auto;
+    font-size: 20px;
+    box-shadow: 0px 0px 5px lightgrey;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+#allforms h2 {
+    text-align: center;
+    padding-bottom: 20px;
+    font-family: sans-serif;
+    
+  }
+  
+#allforms input {
+    margin: 10px;
+    padding: 5px;
+  }
+  
+#allforms input[type="submit"] {
+    width: 100%;
+    margin-left: 0;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+#allforms input[type="submit"]:hover {
+    box-shadow: 0px 3px 5px rgb(138, 138, 138);
+  }
+  
+#post{
+    height: 100px;
+  }
