@@ -79,7 +79,6 @@ function postForm(e){
     e.preventDefault();
 
     let post1 = document.getElementById('post1').value;
-    console.log(document.getElementById('post1').value)
     let POSTobj = new Allform('', '', '', '', '', '', post1);
     console.log(POSTobj);
     document.getElementById("post_form").reset();
