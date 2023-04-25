@@ -84,3 +84,27 @@ function postForm(e){
     document.getElementById("post_form").reset();
 }
 
+//--------------------------------------------------------------------------------------------
+const usersBtn = document.getElementById("users-btn");
+document.getElementById("users-btn").addEventListener('click', getAllUsers);
+
+function getAllUsers() {
+  //e.preventDefault();
+  
+    fetch('http://localhost:3000/users')
+    .then((res) => res.json()) //JSON.parse(res)
+    .then((data) => {
+        let ul = document.getElementById("allUsers");
+        data.forEach((user) => {
+            let li = document.createElement('li');
+            let text = document.createTextNode(user.userName);
+            li.appendChild(text);
+            ul.appendChild(li);
+        })
+
+    })
+
+    .catch(err => console.log('err! ${err}'));
+    
+    
+}
