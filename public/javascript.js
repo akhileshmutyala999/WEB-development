@@ -85,6 +85,7 @@ function postForm(e){
 }
 
 //--------------------------------------------------------------------------------------------
+/*
 const usersBtn = document.getElementById("users-btn");
 document.getElementById("users-btn").addEventListener('click', getAllUsers);
 
@@ -108,3 +109,4 @@ function getAllUsers() {
     
     
 }
+*/
