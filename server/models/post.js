@@ -45,7 +45,7 @@ async function editPost(post){
      return updatedPost[0];
 }
 
-// deleting postboxr
+// deleting postbox
 async function deletePost(post){
     let sql = `DELETE FROM posts
      WHERE postID = ${post.postID}
